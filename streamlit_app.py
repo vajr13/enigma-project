@@ -41,7 +41,7 @@ def enigma_process(message, rotor1, rotor2, rotor3, rotor_pos1, rotor_pos2, roto
     return processed_message
 
 # Streamlit interface
-st.title("Enigma Machine with Configurable Rotor and Plugboard")
+st.title("Enigma Machine Project - 2C")
 message = st.text_input("Masukkan pesan", "")
 
 # Pengaturan posisi rotor dalam satu baris dengan jarak
