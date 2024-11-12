@@ -54,10 +54,9 @@ rotor2 = rotor_2[rotor2_position - 1:] + rotor_2[:rotor2_position - 1]
 rotor3 = rotor_3[rotor3_position - 1:] + rotor_3[:rotor3_position - 1]
 
 # Input pesan
-message = st.text_input("Masukkan pesan untuk dienkripsi/dekripsi:")
+message = st.text_input("Masukkan pesan untuk diproses:")
 
 # Proses enkripsi/dekripsi
 if message:
     processed_message = enigma_process(message, rotor1, rotor2, rotor3)
     st.write(f"Pesan yang diproses: {processed_message}")
-
